@@ -1,4 +1,4 @@
-# Velkommen til den danske QGIS brugergruppes GitHub
+# Indsend dine forbedringsforslag til QGIS
 
 Denne GitHub-repository er oprettet for at indsamle forbedringsforslag fra danske QGIS-brugere. Vi ønsker at skabe en transparent proces for brugergruppens støtte til QGIS-udvikling, hvor alle kan bidrage og følge med.
 
