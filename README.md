@@ -23,7 +23,9 @@ Når vi gennemgår indsendte forslag, lægger vi vægt på:
 - **Teknisk gennemførlighed:** Forslagets kompleksitet og muligheden for implementering i QGIS.
 
 ## Sådan indsender du et issue
-1. **Opret eller undersøg om problemet allerede er oprettet på den officielle QGIS repo [issue side](https://github.com/qgis/QGIS/issues):** Når du beskriver forbedringsforslaget så henvis til det officielle QGIS issue.
+For at indsende et issue skal du have en GitHub-brugerkonto. Hvis du ikke har en, kan du oprette en [her](https://github.com/signup).
+
+1. **Opret eller undersøg om problemet allerede er oprettet på den officielle QGIS [issue side](https://github.com/qgis/QGIS/issues):** Når du beskriver forbedringsforslaget så henvis til det officielle QGIS issue.
 
 2. **Opret et nyt issue:** Klik på "Issues" fanen og vælg "New Issue".
 
@@ -34,10 +36,13 @@ Når vi gennemgår indsendte forslag, lægger vi vægt på:
 ## Status på forbedringsforslag
 Under fanen "Projects" er det muligt at følge status'en for nuværende forbedringsforslag
 
+## Retningslinjer for bidrag
+
+- Vær respektfuld og konstruktiv i din kommunikation.
+- Sørg for, at dit forslag er klart og præcist.
+- Undgå duplikering ved at tjekke eksisterende issues først.
+- Følg GitHubs standarder for rapportering af issues.
+
 ## Kontakt
 
-Har du spørgsmål eller brug for hjælp? Kontakt os gerne via [e-mail](mailto:kontakt@qgis.dk) eller besøg vores [hjemmeside](https://www.qgis.dk).
-
----
-
-**Tak for dit engagement i den danske QGIS brugergruppe!**
+Har du spørgsmål eller brug for hjælp? Kontakt os gerne via [e-mail](mailto:info@qgis.dk) eller besøg vores [hjemmeside](https://www.qgis.dk).
