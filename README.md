@@ -12,6 +12,8 @@ Vi opfordrer dig til at indsende følgende typer af "issues" til bestyrelsens ge
 
 - **Generel udvikling:** Hvis du har forslag til udvikling/forbedring af nuværende funktioner i QGIS.
 
+- **Plugins:** Forslag til Plugins der vil støtte arbejdet i QGIS.
+  
 ## Hvordan vurderer bestyrelsen forslagene?
 
 Når vi gennemgår indsendte forslag, lægger vi vægt på:
