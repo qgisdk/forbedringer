@@ -1,79 +1,59 @@
-name: QGIS forbedringsønske
-about: Skabelon til indberetning af QGIS ændringsønske
-title: ''
-labels: ''
-assignees: ''
+name: "QGIS forbedringsønske"
+description: "Skabelon til indberetning af QGIS ændringsønske"
+title: "Forbedringsønske: "
+labels: []
+assignees: []
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## Type af issue
-        Vælg venligst typen af issue:
+  # 1) Dropdown: Type af issue
   - type: dropdown
     id: issue_type
     attributes:
-      label: Type af issue
+      label: "Type af issue"
       options:
         - Fejlrettelse
         - Forslag til ny funktion
         - Generel udvikling
+    validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        ## Beskrivelse
-        Detaljeret beskrivelse af problemet eller forslag:
+  # 2) Tekstfelt: Beskrivelse
   - type: textarea
     id: beskrivelse
     attributes:
-      label: Beskrivelse
-      placeholder: Skriv din beskrivelse her...
+      label: "Beskrivelse"
+      description: "Detaljeret beskrivelse af problemet eller forslag"
+      placeholder: "Skriv din beskrivelse her…"
+    validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        ## Motivation og nytteværdi
-        Forklar hvorfor denne funktion eller ændring er vigtig, og hvordan den vil gavne danske QGIS-brugere:
+  # 3) Tekstfelt: Motivation og nytteværdi
   - type: textarea
     id: motivation
     attributes:
-      label: Motivation og nytteværdi
-      placeholder: Skriv din motivation her...
-      required: false
+      label: "Motivation og nytteværdi"
+      description: "Hvorfor er denne ændring vigtig for danske QGIS‑brugere?"
+      placeholder: "Skriv din motivation her…"
 
-  - type: markdown
-    attributes:
-      value: |
-        ## Links til eksisterende issues
-        Hvis relevant, inkluder links til relaterede issues på den officielle QGIS issue-side:
+  # 4) Input: Links til eksisterende issues
   - type: input
     id: links
     attributes:
-      label: Links til eksisterende issues
-      placeholder: https://github.com/qgis/QGIS/issues/...
-      required: false
+      label: "Links til eksisterende issues"
+      description: "Evt. link til relaterede issues på QGIS’s officielle issue‑tracker"
+      placeholder: "https://github.com/qgis/QGIS/issues/12345"
 
+  # 5) Fil‑upload (Markdown‑sektion, GitHub håndterer upload UI automatisk)
   - type: markdown
     attributes:
       value: |
         ## Skærmbilleder eller illustrationer
-        Tilføj eventuelle skærmbilleder, diagrammer eller andre visuelle hjælpemidler:
-  - type: markdown
-    attributes:
-      value: |
-        *(Træk og slip eller upload filer nedenfor)*
+        Træk og slip billeder her, eller brug knappen “Attach files”.
 
-  - type: markdown
-    attributes:
-      value: |
-        ## Yderligere oplysninger
-        Tilføj andre relevante oplysninger:
+  # 6) Tekstfelt: Yderligere oplysninger
   - type: textarea
     id: yderligere_oplysninger
     attributes:
-      label: Yderligere oplysninger
-      placeholder: Skriv yderligere oplysninger her...
-      required: false
+      label: "Yderligere oplysninger"
+      description: "Andre relevante detaljer, log‑uddrag, miljø‑specifikationer osv."
+      placeholder: "Skriv yderligere oplysninger her…"
