@@ -5,7 +5,17 @@ labels: []
 assignees: []
 
 body:
-  # 1) Dropdown: Type af issue
+  # 1) Input: Virksomhed / institution
+  - type: input
+    id: organisation
+    attributes:
+      label: "Virksomhed / institution"
+      description: "Hvilken virksomhed eller institution repræsenterer du?"
+      placeholder: "F.eks. Aarhus Universitet eller GeoData A/S"
+    validations:
+      required: true
+
+  # 2) Dropdown: Type af issue
   - type: dropdown
     id: issue_type
     attributes:
@@ -17,7 +27,7 @@ body:
     validations:
       required: true
 
-  # 2) Tekstfelt: Beskrivelse
+  # 3) Tekstfelt: Beskrivelse
   - type: textarea
     id: beskrivelse
     attributes:
@@ -27,33 +37,18 @@ body:
     validations:
       required: true
 
-  # 3) Tekstfelt: Motivation og nytteværdi
-  - type: textarea
-    id: motivation
-    attributes:
-      label: "Motivation og nytteværdi"
-      description: "Hvorfor er denne ændring vigtig for danske QGIS‑brugere?"
-      placeholder: "Skriv din motivation her…"
-
   # 4) Input: Links til eksisterende issues
   - type: input
     id: links
     attributes:
       label: "Links til eksisterende issues"
-      description: "Evt. link til relaterede issues på QGIS’s officielle issue‑tracker"
+      description: "Evt. link til relaterede issues på QGIS’s officielle issue-tracker"
       placeholder: "https://github.com/qgis/QGIS/issues/12345"
 
-  # 5) Fil‑upload (Markdown‑sektion, GitHub håndterer upload UI automatisk)
-  - type: markdown
-    attributes:
-      value: |
-        ## Skærmbilleder eller illustrationer
-        Træk og slip billeder her, eller brug knappen “Attach files”.
-
-  # 6) Tekstfelt: Yderligere oplysninger
+  # 5) Tekstfelt: Yderligere oplysninger
   - type: textarea
     id: yderligere_oplysninger
     attributes:
       label: "Yderligere oplysninger"
-      description: "Andre relevante detaljer, log‑uddrag, miljø‑specifikationer osv."
+      description: "Andre relevante detaljer, log-uddrag, miljø-specifikationer osv."
       placeholder: "Skriv yderligere oplysninger her…"
