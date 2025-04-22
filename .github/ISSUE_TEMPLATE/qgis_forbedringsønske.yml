@@ -14,8 +14,16 @@ body:
       placeholder: "F.eks. Aarhus Universitet eller GeoData A/S"
     validations:
       required: true
+      
+  # 2) Checkbox: Medlemskab af QGIS brugergruppen
+  - type: checkboxes
+    id: medlemskab
+    attributes:
+      label: "Medlemskab af QGIS brugergruppen"
+      options:
+        - "Jeg eller min organisation er medlem af QGIS brugergruppen"
 
-  # 2) Dropdown: Type af issue
+  # 3) Dropdown: Type af issue
   - type: dropdown
     id: issue_type
     attributes:
@@ -27,7 +35,7 @@ body:
     validations:
       required: true
 
-  # 3) Tekstfelt: Beskrivelse
+  # 4) Tekstfelt: Beskrivelse
   - type: textarea
     id: beskrivelse
     attributes:
@@ -37,7 +45,7 @@ body:
     validations:
       required: true
 
-  # 4) Input: Links til eksisterende issues
+  # 5) Input: Links til eksisterende issues
   - type: input
     id: links
     attributes:
@@ -45,7 +53,7 @@ body:
       description: "Evt. link til relaterede issues på QGIS’s officielle issue-tracker"
       placeholder: "https://github.com/qgis/QGIS/issues/12345"
 
-  # 5) Tekstfelt: Yderligere oplysninger
+  # 6) Tekstfelt: Yderligere oplysninger
   - type: textarea
     id: yderligere_oplysninger
     attributes:
