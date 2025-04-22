@@ -14,14 +14,17 @@ body:
       placeholder: "F.eks. Aarhus Universitet eller GeoData A/S"
     validations:
       required: true
-      
+
   # 2) Checkbox: Medlemskab af QGIS brugergruppen
   - type: checkboxes
     id: medlemskab
     attributes:
       label: "Medlemskab af QGIS brugergruppen"
+      description: "Marker om du eller din organisation er medlem af QGIS brugergruppen"
       options:
-        - "Jeg eller min organisation er medlem af QGIS brugergruppen"
+        - label: "Jeg eller min organisation er medlem af QGIS brugergruppen"
+    validations:
+      required: false
 
   # 3) Dropdown: Type af issue
   - type: dropdown
@@ -29,9 +32,9 @@ body:
     attributes:
       label: "Type af issue"
       options:
-        - Fejlrettelse
-        - Forslag til ny funktion
-        - Generel udvikling
+        - "Fejlrettelse"
+        - "Forslag til ny funktion"
+        - "Generel udvikling"
     validations:
       required: true
 
