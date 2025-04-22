@@ -20,11 +20,10 @@ body:
     id: medlemskab
     attributes:
       label: "Medlemskab af QGIS brugergruppen"
-      description: "Marker om du eller din organisation er medlem af QGIS brugergruppen"
       options:
-        - label: "Jeg eller min organisation er medlem af QGIS brugergruppen"
+        - label: "Jeg eller min virksomhed/institution er medlem af QGIS brugergruppen"
     validations:
-      required: false
+      required: true
 
   # 3) Dropdown: Type af issue
   - type: dropdown
