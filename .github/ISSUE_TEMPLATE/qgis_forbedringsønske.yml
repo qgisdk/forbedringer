@@ -25,15 +25,16 @@ body:
     validations:
       required: true
 
-  # 3) Dropdown: Type af issue
+  # 3) Dropdown: Type af forbedringsønske
   - type: dropdown
     id: issue_type
     attributes:
-      label: "Type af issue"
+      label: "Type af forbedringsønske"
       options:
         - "Fejlrettelse"
         - "Forslag til ny funktion"
         - "Generel udvikling"
+        - "Plugin udvikling"
     validations:
       required: true
 
